@@ -28,14 +28,14 @@ sym_decrypted = symmetric_decrypt(sym_encrypted, sym_key)
 #Asymmetric Encryption (Simplified RSA)
 
 # Key qeneration
-prime1 = 17
-prime2 = 11
+prime1 = 23
+prime2 = 31
 primeTotal = prime1 * prime2
 help = (prime1 - 1) * (prime2 - 1)
 
 # Public and private keys
 publicKey = 7      
-privateKey = 23     
+privateKey = 283     
 
 def asymmetric_encrypt(message, publicKey, primeTotal):
     encrypted = []
