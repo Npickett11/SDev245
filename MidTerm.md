@@ -1,0 +1,6 @@
+This programs purpose is to accepts a user’s input after that it creates a SHA-256 hash for integrity then encrypts the message using AESGCM symmetric encryption. Finally it decrypts the message and compares hashes to verify that the data was not altered during the process.
+
+This solution upholds the the principles of confidentiality, integrity, and avaliability. Confidentiality is achieved through the use of AESGCM encyryption, this convert's the users message into unreadable ciphertext. Only someone with the correct key could decrypt and read the origional message.
+Integrity is upheld by creating a SHA-256 hash of the message before encryption then comparing it to the hash of the decrypted message. If the two hashes match then it confirms that the data was not changed during the process.
+Availability is achieved through the system using symmetric encryption this means the same key can be used to decrypt the data whenever access is needed as long as the key and nonce are available.
+Entropy and key generation are important in keeping encryptioon secure. Entropy is used in generating random cryptographic values which makes them difficult to predict or guess. Especially when used in key generation as a random key ensures that attackers cannot easily guess the key.
